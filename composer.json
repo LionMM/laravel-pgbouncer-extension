@@ -1,44 +1,48 @@
 {
-  "name": "t1nkl/postgres-pgbouncer-extension",
-  "description": "Laravel PostgreSQL pgbouncer extension fix for PDO::ATTR_EMULATE_PREPARES option",
-  "keywords": [
-    "laravel",
-    "database",
-    "postgres",
-    "postgresql",
-    "pgbouncer",
-    "ATTR_EMULATE_PREPARES"
-  ],
-  "type": "library",
-  "version": "1.0.3",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Kyryll Kovalenko",
-      "email": "kyryll.kovalenko@gmail.com"
-    }
-  ],
-  "require": {
-    "php": "^7.4|^8.0|^8.1",
-    "ext-pdo": "*",
-    "laravel/framework": "^7.0|^8.0|^9.0|^10.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "PostgresPgbouncerExtension\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "PostgresPgbouncerExtension\\PostgresPgbouncerExtensionProvider"
-      ]
-    }
-  },
-  "scripts": {
-    "check-style": "phpcs -p --standard=psr12 src/",
-    "fix-style": "phpcbf -p --standard=psr12 src/"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "lionmm/laravel-pgbouncer-extension",
+    "description": "Laravel PostgreSQL pgbouncer extension fix for PDO::ATTR_EMULATE_PREPARES option",
+    "keywords": [
+        "laravel",
+        "database",
+        "postgres",
+        "postgresql",
+        "pgbouncer",
+        "ATTR_EMULATE_PREPARES"
+    ],
+    "type": "library",
+    "version": "1.0.4",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyryll Kovalenko",
+            "email": "kyryll.kovalenko@gmail.com"
+        },
+        {
+            "name": "Kyrylo Snovidov",
+            "email": "github@snovidov.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4|>=8.0",
+        "ext-pdo": "*",
+        "laravel/framework": "^>=7"
+    },
+    "autoload": {
+        "psr-4": {
+            "PostgresPgbouncerExtension\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PostgresPgbouncerExtension\\PostgresPgbouncerExtensionProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=psr12 src/",
+        "fix-style": "phpcbf -p --standard=psr12 src/"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

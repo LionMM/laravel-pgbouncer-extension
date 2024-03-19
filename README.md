@@ -10,4 +10,4 @@ This is package version on this fix - https://github.com/t1nkl/Laravel-PostgreSQ
 
 
 ### Instruction:
-- `composer require t1nkl/postgres-pgbouncer-extension`
+- `composer require lionmm/laravel-pgbouncer-extension`
